@@ -1,0 +1,11 @@
+name: Ionico
+version: 0.0.1
+description: Um tema simples para meu site
+icon:  microchip
+author:
+  name: Filipe Mosca
+  email: filipemosca@canalionico.com.br
+  url: https://canalionico.com.br
+homepage: https://github.com/filipemosca/ionico-grav-theme
+keywords: simple, theme, fast, responsive, html5, css3
+bugs: https://github.com/filipemosca/ionico-grav-theme/issues
