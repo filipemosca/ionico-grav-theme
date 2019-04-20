@@ -1,2 +1,2 @@
-# Ionico Grav Theme
-A grav theme for my site
+# Iônico Grav Theme
+A grave theme for my site
