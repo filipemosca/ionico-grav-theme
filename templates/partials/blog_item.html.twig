@@ -1,0 +1,7 @@
+<li class="post-list-li">
+  <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+  <a href="{{ page.url }}"><img class="featured-image" src="{{ page.url }}/thumb.jpg" alt="thumbnail"></a>
+
+  <p class="post-info">{{ page.header.author }} - {{ page.date|date('d') }} de {{ 'MONTHS_OF_THE_YEAR'|ta(page.date|date('n') - 1) }}</i></p>
+  {{ page.summary }}
+</li>

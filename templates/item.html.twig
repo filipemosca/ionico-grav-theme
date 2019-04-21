@@ -5,8 +5,7 @@
 <p class="post-page-info">{{ site.author.name }} - {{ post.date|date(dateformat) }}</p>
 
 {{ page.content }}
-  {% if config.plugins.jscomments.enabled %}
-      {{ jscomments() }}
-  {% endif %}
+
+{% include 'partials/comments.html.twig' %}
 
 {% endblock %}

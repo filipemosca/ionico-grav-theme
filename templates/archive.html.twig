@@ -1,16 +1,12 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-  {% set collection = page.collection() %}
-  {% set dateformat = admin.page.dateformat ?: config.system.pages.dateformat.short ?: "F d, Y" %}
-
-
   <h2>Arquivo do site</h2>
   <div class="arquivo-list">
     <ol reversed>
-      {% for post in page.find('/blog').children.order('date', 'desc').slice(0, 5) %}
+      {% for page in page.find('/blog').children.order('date', 'desc').slice(0, 5) %}
         <li>
-          <h2><a href="{{ post.url }}">{{ post.title }}&nbsp[{{ post.date|date(dateformat) }}]</a></h2>
+          <h2><a href="{{ page.url }}">{{ page.title }}&nbsp[{{ page.date|date(dateformat) }}]</a></h2>
         </li>
       {% endfor %}
     </ol>
