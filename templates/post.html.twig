@@ -1,0 +1,12 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+<h1>{{ page.title }}</h1>
+<p class="post-page-info">{{ site.author.name }} - {{ post.date|date(dateformat) }}</p>
+
+{{ page.content }}
+  {% if config.plugins.jscomments.enabled %}
+      {{ jscomments() }}
+  {% endif %}
+
+{% endblock %}
