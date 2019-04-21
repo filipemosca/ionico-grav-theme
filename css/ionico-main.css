@@ -15,11 +15,13 @@ body {
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
+  margin-top: 20px;
 }
 
 header {
   border-bottom: 1px solid #e8e8e8;
   border-top: 5px solid #008000;
+  margin-bottom: 20px;
 }
 
 /* Barra de navegaçao */
@@ -30,21 +32,20 @@ nav ul {
   margin-left: auto;
   padding-right: 20px;
   padding-left: 20px;
-  }
-  li {
+}
+nav ul li {
   line-height: 30px;
   text-align: center;
   list-style-type: none;
   display: inline-block;
-  }
-  a {
+}
+nav ul li a {
   text-decoration: none;
   padding: 10px;
   font-size: 16px;
-  }
-  a:hover {
-    color: black;
-  }
+}
+nav ul li a:hover {
+  color: black;
 }
 
 
@@ -72,6 +73,8 @@ nav ul {
   max-width: 320px;
 }
 
+
+/* text format */
 h1 {
   font-size: 36px;
 }
@@ -81,13 +84,11 @@ h2 {
 h3 {
   font-size: 26px;
 }
-
 h1, h2, h3, h4, h5, h6 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   text-align: left;
 }
-
 p, a, li, figcaption {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
@@ -97,21 +98,22 @@ p, a, li, figcaption {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
 }
-
 a{
   color: #2a7ae2;
 }
 
 .abertura {
   color: gray;
-  a {
-    text-decoration: none;
-    color: #2a7ae2;
-  }
-  a:hover {
-    color: black;
-  }
 }
+.abertura  a {
+  text-decoration: none;
+  color: #2a7ae2;
+}
+.abertura  a:hover {
+  color: black;
+}
+
+
 
 .post-list ul {
   list-style-type: none;
@@ -122,16 +124,13 @@ a{
 .post-list ul li {
 
 }
-
 .post-list ul li h2 {
-  font-size: 28px;
   margin: 10px 0 0 0;
-  padding-bottom: 10px;
 }
 .post-list ul li h2 a {
   text-decoration: none;
   padding-left: 0;
-  font-size: 28px;
+  font-size: 24px;
   color: #2a7ae2;
 }
 .post-list ul li h2 a:hover {
@@ -139,23 +138,27 @@ a{
 }
 .post-list ul li p {
   line-height: 1.6rem;
+  margin-top: 0;
+}
+.post-info {
+  margin-bottom: 0px;
 }
 
 /* Archive  */
 .arquivo-list ol {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 .arquivo-list ol li h2 {
-    font-size: 16px;
-    margin-top: 0;
-    margin-bottom: 4px;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 4px;
 }
-.arquivo ol li h2 a {
-    text-decoration: none;
-    color: #2a7ae2;
+.arquivo-list ol li h2 a {
+  text-decoration: none;
+  color: #2a7ae2;
 }
-.arquivo ol li h2 a:hover {
-    color: black;
+.arquivo-list ol li h2 a:hover {
+  color: black;
 }
 
 /* Code */
@@ -213,14 +216,17 @@ figure {
 
 /* footer */
 .footer {
-  border-top: 1px solid #e8e8e8;
-  padding: 30px;
+  margin-top: 40px;
+  padding-top: 20px;
+  background-color: green;
+  height: auto;
 }
 .footer-col ul {
   padding-left: 0;
 }
-.footer-col li {
+.footer-col ul li, ul li a {
   list-style-type: none;
+  color: white;
 }
 .footer-col1 {
   width: 100%;
@@ -236,7 +242,7 @@ figure {
 .contato li a {
   text-decoration: none;
   font-size: 14px;
-  color: #2a7ae2;
+  color: white;
 }
 .contato li a:hover {
   color: black;
@@ -247,8 +253,14 @@ figure {
   width: 100%;
 }
 #creditos {
-  color: gray;
+  color: white;
   font-size: 16px;
+}
+.love {
+	font-size: 14px;
+  color: white;
+	margin-left: 2px;
+	margin-right: 2px;
 }
 
 .footer-col2 {
@@ -260,7 +272,7 @@ figure {
 }
 .menu li a {
   text-decoration: none;
-  color: #2a7ae2;
+  color: white;
   font-size: 16px;
 }
 .menu li a:hover {
@@ -270,7 +282,7 @@ figure {
 .svg-icon {
   height: 16px;
   padding-right: 5px;
-  fill: #828282;
+  fill: white;
 }
 
 /* Para tablet */
@@ -305,12 +317,18 @@ figure {
     padding-left: 0;
   }
   .footer-col1 {
-    width: calc(45% - (30px / 2));
+    width: calc(40% - (30px / 2));
     }
   .footer-col2 {
     width: calc(25% - (30px / 2));
   }
   .footer-col3 {
     width: calc(35% - (30px / 2));
+  }
+}
+@media only screen and (min-width: 800px) {
+  .footer{
+    display: inline-block;
+    width: 100%;
   }
 }
