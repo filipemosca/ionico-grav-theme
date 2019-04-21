@@ -224,7 +224,11 @@ figure {
 .footer-col ul {
   padding-left: 0;
 }
-.footer-col ul li, ul li a {
+.footer-col ul li {
+  list-style-type: none;
+  color: white;
+}
+.footer-col ul li a {
   list-style-type: none;
   color: white;
 }
