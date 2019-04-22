@@ -6,7 +6,7 @@
     <ol reversed>
       {% for page in page.find('/blog').children.order('date', 'desc').slice(0, 5) %}
         <li>
-          <h2><a href="{{ page.url }}">{{ page.title }}&nbsp[{{ page.date|date(dateformat) }}]</a></h2>
+          <h2><a href="{{ page.url }}">{{ page.title }} <i class="fa fa-calendar-alt"></i> {{ page.date|date('d') }} de {{ 'MONTHS_OF_THE_YEAR'|ta(page.date|date('n') - 1) }}</a></h2>
         </li>
       {% endfor %}
     </ol>

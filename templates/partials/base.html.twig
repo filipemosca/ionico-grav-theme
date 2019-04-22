@@ -34,6 +34,7 @@
         {% endif %}
         <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png') }}"/>
         <link rel = "icon" type = "image/png" href="{{ theme_url }}/images/favicon.png">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <title>{% if header.title %}{{ header.title }} | {% endif %}{{ site.title }}</title>
         {% block stylesheets %}
              {% do assets.add('theme://css/ionico-main.css',101) %}

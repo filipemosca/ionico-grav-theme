@@ -4,13 +4,14 @@
     <nav role = "navigation">
        <ul class = "nav">
           {% for page in pages.children %}
-          {% if page.visible %}
-          {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
-          <li class = "{{ current_page }}"><a href = "{{ page.url }}">{{ page.menu }}</a></li>
-          {% endif %}
+            {% if page.visible %}
+            {% set current_page = (page.active) ? 'active' : '' %}
+            <li class = "{{ current_page }}"><a href = "{{ page.url }}">{% if page.header.icon %}<i class="fa fa-{{ page.header.icon }}"></i>{% endif %}{{ page.menu }}</a></li>
+            {% endif %}
           {% endfor %}
-          <li><a href="https://resumos.canalionico.com.br">Resumos</a></li>
-          <li><a href="https://radical.canalionico.com.br">Radical</a></li>
+
+          <li><a href="https://resumos.canalionico.com.br"><i class="fa fa-align-left"></i>Resumos</a></li>
+          <li><a href="https://radical.canalionico.com.br"><i class="fa fa-bolt"></i>Radical</a></li>
        </ul>
     </nav>
   </div>
