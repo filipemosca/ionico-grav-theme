@@ -3,17 +3,15 @@
 {% set collection = page.collection() %}
 
 {% block content %}
-  <div class="wrapper">
-    <div class="post-list">
-      <ul>
-        {% for child in collection %}
-          {% include 'partials/blog_item.html.twig' with {'blog':page, 'page':child, 'truncate':true} %}
-        {% endfor %}
-      </ul>
-    </div>
-      {% if config.plugins.pagination.enabled and collection.params.pagination %}
-          {% include 'partials/pagination.html.twig' with {'base_url':page.url, 'pagination':collection.params.pagination} %}
-      {% endif %}
-    </div>
+  <div class="post-list">
+    <ul>
+      {% for child in collection %}
+        {% include 'partials/blog_item.html.twig' with {'blog':page, 'page':child, 'truncate':true} %}
+      {% endfor %}
+    </ul>
+  </div>
+    {% if config.plugins.pagination.enabled and collection.params.pagination %}
+        {% include 'partials/pagination.html.twig' with {'base_url':page.url, 'pagination':collection.params.pagination} %}
+    {% endif %}
   </div>
 {% endblock %}

@@ -4,7 +4,7 @@
       <a href="{{ page.url }}"><img class="featured-image" src="{{ page.url }}/thumb.jpg" alt="thumbnail"></a>
 
     <div class="post-info">
-        <p class="post-info-date"><i class="far fa-calendar-alt"></i> {{ page.date|date('d') }} de {{ 'MONTHS_OF_THE_YEAR'|ta(page.date|date('n') - 1) }}</p>
+        <p class="post-info-date"><i class="far fa-calendar-alt"></i> {{ page.date }}</p>
     </div>
     <div class="post-summary">
         {{ page.summary }}
