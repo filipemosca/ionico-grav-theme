@@ -5,7 +5,6 @@
   padding-right: 10px;
   padding-left: 10px;
 }
-
 body {
   margin: 0 0 0 0;
 }
@@ -17,11 +16,8 @@ body {
   margin: 0 auto;
   margin-top: 20px;
 }
-
 header {
-  border-bottom: 1px solid #e8e8e8;
   border-top: 5px solid #008000;
-  margin-bottom: 20px;
 }
 
 .fa {
@@ -46,9 +42,8 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  padding: 10px;
   font-size: 16px;
-  background-color: #b7b7b7;
+  background-color: #828282;
   padding: 5px 5px 5px 5px;
   border-radius: 0.5rem;
   color: white;
@@ -69,16 +64,6 @@ nav ul li a:hover {
   width: 100%;
   margin-bottom: 30px;
 }
-
-.featured-image {
-  object-fit: cover;
-  max-width: 320px;
-  height: 210px;
-  width: 100%;
-  margin: 5px auto 5px;
-  border-radius: 1rem;
-}
-
 .post-info {
   font-size: 16px;
   color: gray;
@@ -127,14 +112,13 @@ hr {
 .abertura  a:hover {
   color: black;
 }
-
-
-.post-card {
+.featured-image {
+  object-fit: cover;
+  max-width: 320px;
+  height: 210px;
+  width: 100%;
+  margin: 5px auto 5px;
   border-radius: 1rem;
-  margin: 5px 5px 5px 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-sizing: content-box;
-  padding: 5px 5px 5px 5px;
 }
 .post-list ul {
   list-style-type: none;
@@ -149,6 +133,7 @@ hr {
   margin: 10px 0 0 0;
   padding-left: 10px;
   line-height: 1.6rem;
+  margin-bottom: 15px;
 }
 .post-list ul li h2 a {
   text-decoration: none;
@@ -164,9 +149,9 @@ hr {
   line-height: 1.6rem;
   margin-top: 0;
 }
-
 .post-info-date {
-  text-align: left;
+  text-align: center;
+  margin-top: 5px;
 }
 
 /* Archive  */
@@ -221,7 +206,6 @@ kbd {
   white-space: nowrap;
 }
 
-
 /* Images */
 img {
   max-width: 100%;
@@ -245,6 +229,9 @@ figure {
   padding-top: 20px;
   background-color: green;
   height: auto;
+  display: inline-block;
+  width: 100%;
+  }
 }
 .footer-col ul {
   padding-left: 0;
@@ -363,5 +350,10 @@ figure {
   .footer{
     display: inline-block;
     width: 100%;
+  }
+  .post-card {
+    border-radius: 1rem;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
   }
 }
